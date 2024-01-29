@@ -597,10 +597,6 @@ footer .content {
 }
 
 @media (min-width: 769px) and (max-width: 1024px)  {
-    header {
-        background-color: #e10c0c;
-    }
-
     .section1 h1{
         font-size: 44px;
     }
