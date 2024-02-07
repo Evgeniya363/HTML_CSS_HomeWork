@@ -37,9 +37,12 @@ header .menu__panel {
     gap: 25px;
 }
 
-header .basket {
+header .cart-container {
     position: relative;
-    background: url(img/basket.png) no-repeat;
+}
+
+header .basket {  
+    background: url(img/cart_menu.svg) no-repeat;
     width: 40px;
     height: 40px;
 }
@@ -57,16 +60,20 @@ header .digit{
     top: -5px;
 }
 
-.dropbtn:hover, .dropbtn:focus {
-    background-color: #2980B9;
-    .menu {
-        display: block;
-    }
+.menu_button:hover {
+    filter: invert(47%) sepia(5%) saturate(5086%) hue-rotate(313deg) brightness(137%) contrast(88%);
+}
+
+.menu_button:active {
+    filter: invert(15%) sepia(95%) saturate(5987%) hue-rotate(343deg) brightness(90%) contrast(90%);
+
+    /* filter: invert(87%) sepia(16%) saturate(3772%) hue-rotate(307deg) brightness(101%) contrast(101%); */
 }
 
 
 .container__align {
     max-width: var(--width-content);
+    
 }
 
 nav {
@@ -261,6 +268,29 @@ nav {
 .section3 .item  img {
     max-width: 100%;
     height: auto;
+    position: relative;
+}
+
+.section3 .image__container {
+    /* background-image: url(img/Layer\ 4.png);
+    max-width: 100%;
+    height: auto; */
+    position: relative;
+}
+
+.section3 .image__container:hover::before {
+    z-index: 1;
+    position: absolute;
+    content: url(img/Rectangle\ 15-2.png);
+    overflow: hidden;
+ }
+
+.section3 .image__container:hover::after {
+    z-index: 2;
+   position: absolute;
+   top: calc(50% - 22px);
+   left: calc(50% - 70px);
+   content: url(img/Cart.svg);
 }
 
 .section3 .description {
@@ -342,14 +372,20 @@ nav {
 
 .section3 button {
     margin-top: 48px;
-    background-color: #F16D7F;
-    border: #FF6A6A;
     width: 212px;
     height: 48px;
-    color: #FFFFFF;
+    color: #F26376;
+    background-color: #FFFFFF;
+    border: #FF6A6A 1px solid;
     font-family: 'Lato', sans-serif;
     font-weight: 400;   
     font-size: 16px;
+}
+
+.section3 button:hover {
+    background-color: #F16D7F;
+    color: #FFFFFF;
+    /* margin-top: 32px; */
 }
 
 .section4 {
@@ -455,33 +491,40 @@ nav {
 footer {
     background-color: #222224;
 }
-footer span {
+.brands f3 {
     color: #FBFBFB;
     font-size: 16px;
 }
 
-
-
-.social {
+.brands .brands__social {
     width: 32px;
     height: 32px;
     background-color: #FFFFFF;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
-.insta {
+.brands .fa-brands {
+    color: #000;
+}
+
+.brands .brands__social:hover {
     background-color: #F16D7F;
 }
 
-.btn__social {
+.brands .brands__social:hover .fa-twitter{
+    color: #FFF;
+}
+
+.brands .btn__social {
     display: flex;
     flex-direction: row;
     gap: 7px;
 }
 
-footer .content {
+.brands {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -585,15 +628,12 @@ footer .content {
         width: calc(100% - 80px);
     }
 
-    .section3 .content {
-        gap: 14px;
+    .section3 button {
+        margin-top: 32px;
     }
 
-    .section3 button {
-        border: #FF6A6A 1px solid;
-        color: #F26376;
-        background-color: #FFFFFF;
-        margin-top: 32px;
+    .section3 .content {
+        gap: 14px;
     }
 
     .section4 p {
@@ -707,7 +747,7 @@ footer .content {
         width: 100vw;
     }
 
-    footer .container__align {
+    .brands {
         align-items: center;
         flex-direction: column-reverse;
         gap: 40px;
