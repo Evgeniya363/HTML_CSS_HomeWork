@@ -514,7 +514,7 @@ footer {
     background-color: #F16D7F;
 }
 
-.brands .brands__social:hover .fa-twitter{
+.brands .brands__social:hover .fa-brands {
     color: #FFF;
 }
 
