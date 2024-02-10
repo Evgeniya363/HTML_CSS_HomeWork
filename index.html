@@ -11,33 +11,58 @@
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header class="menu">
         <nav class="container__align">
             <div class="logo">
-                <img src="img/Group 2.png" alt="Logo">
-                <div class="menu_button search">
+                <img src="img/Group2.png" alt="Logo">
+                <div class="menu__button search">
                     <img src="img/search.svg" alt="Search">
                 </div>
             </div>
             <div class="menu__panel">
-                <div class="menu_button dropbtn">
-                    <img src="img/drop.svg" alt="">
+                <div class="menu__dropdown">
+                    <div class="menu__button dropbtn"><img src="img/drop.svg" alt="Выпадающее меню"></div>
+                    <ul class="menu__list">
+                        <li class="menu__container"> </li>
+                        <li class="menu__item"><a class="menu__link menu__category" href="#">MENU</a></li>
+                        <li class="menu__item"><a class="menu__link menu__category" href="#">MAN</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Accessories</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Bags</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Denim</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">T-Shirts</a></li>
+                        <li class="menu__item"><a class="menu__link menu__category" href="#Women">WOMAN</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Accessories</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Jackets & Coats</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Polos</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">T-Shirts</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Shirts</a></li>
+                        <li class="menu__item"><a class="menu__link menu__category" href="#">KIDS</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Accessories</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Jackets & Coats</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Polos</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">T-Shirts</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Shirts</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">Bags</a></li>
+                    </ul>
                 </div>
-                <div class="menu_button profile"><img src="img/profile.svg" alt=""></div>
-                <div class="cart-container">
-                    <div class="menu_button basket"></div>
-                    <img class="ellipse" src="img/Ellipse 2.png" alt="">
+                <div class="menu__button profile menu_btn_hidden">
+                    <img src="img/profile.svg" alt="">
+                </div>
+                <div class="cart-container menu_btn_hidden">
+                    <div class="menu__button basket"></div>
+                    <img class="ellipse" src="img/Ellipse2.png" alt="">
                     <div class="digit">5</div>
                 </div>
-             
-            </div>
-            
+
+            </div>  
         </nav>
     </header>
+
     <div class="content">
         <div class="section1">
             <div class="section__container container__align">
                 <div class="layer"></div>
+                <!-- <div class="layer"><img src="img/Layer57.png" alt="Photo man"></div> -->
                 <div class="header">
                     <h1>THE BRAND</h1>
                     <div class="header2">
@@ -47,69 +72,48 @@
                 </div>
             </div>
         </div>
-        <div class="menu">
-            <div class="contains">
-                <div class="header"><a class="header" href="#">MENU</a></div>
-                <div class="category"><a class="category" href="#">MAN</a></div>
-                <div class="position"><a href="#">Accessories</a></div>
-                <div class="position"><a href="#">Bags</a></div>
-                <div class="position"><a href="#">Denim</a></div>
-                <div class="position"><a href="#">T-Shirts</a></div>
-                <div class="category"><a class="category" href="#">WOMAN</a></div>
-                <div class="position"><a href="#">Accessories</a></div>
-                <div class="position"><a href="#">Jackets & Coats</a></div>
-                <div class="position"><a href="#">Polos</a></div>
-                <div class="position"><a href="#">T-Shirts</a></div>
-                <div class="position"><a href="#">Shirts</a></div>
-                <div class="category"><a class="category" href="#">KIDS</a></div>
-                <div class="position"><a href="#">Accessories</a></div>
-                <div class="position"><a href="#">Jackets & Coats</a></div>
-                <div class="position"><a href="#">Polos</a></div>
-                <div class="position"><a href="#">T-Shirts</a></div>
-                <div class="position"><a href="#">Shirts</a></div>
-                <div class="position"><a href="#">Bags</a></div>
-            </div>
-        </div>
 
-        <div class="section2">
+        <div class="section2 container__align">
             <div class="part__upper">
-                <div class="picture1">
-                    <div class="background">
-                        <div class="sale">
-                            <h3 class="another__color">30% OFF</h3>
-                            <h2 class="color__header">FOR WOMEN</h2>
-                        </div> 
-                    </div>
+                <div class="sale__picture short__picture" id="Women">
+                    <img src="img/si1.jpg" alt="">
+                    <div class="sale">
+                        <h3 class="another__color">30% OFF</h3>
+                        <h2 class="color__header">FOR WOMEN</h2>
+                    </div> 
                 </div>
-                <div class="picture2">
-                    <div class="background">
-                        <div class="sale">
-                            <h3 class="another__color">HOT DEAL</h3>
-                            <h2 class="color__header">FOR MEN</h2>
-                        </div> 
-                    </div>
+
+                <div class="sale__picture short__picture" id="Men">
+                    <img src="img/si2.jpg" alt="">
+                    <div class="sale">
+                        <h3 class="another__color">HOT DEAL</h3>
+                        <h2 class="color__header">FOR MEN</h2>
+                    </div> 
                 </div>
-                <div class="picture3">
-                    <div class="background">
-                        <div class="sale">
-                            <h3 class="another__color">NEW ARRIVALS</h3>
-                            <h2 class="color__header">FOR KIDS</h2>
-                        </div> 
-                    </div>
+                <div class="sale__picture short__picture" id="Kids">
+                    <img src="img/si3.jpg" alt="">
+                    <div class="sale">
+                        <h3 class="another__color">NEW ARRIVALS</h3>
+                        <h2 class="color__header">FOR KIDS</h2>
+                    </div> 
                 </div>
             </div>
             <div class="part__lower">
-                <div class="picture4">
-                    <div class="background__footer">
+                <div class="sale__picture long__picture container__align">
+                    <img src="img/sibig.jpg" alt="">
+                    <div class="sale">
+                        <h3 class="another__color">NEW ARRIVALS</h3>
+                        <h2 class="color__header">FOR KIDS</h2>
+                    </div> 
+                    <!-- <div class="background__footer">
                         <div class="sale">
                             <h3 class="another__color">LUXIROUS & TRENDY30% OFF</h3>
                             <h2 class="color__header">ACCESORIES</h2>
                         </div> 
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
-
         <div class="section3">
             <div class="header">
                 <h1>Fetured Items</h1>
@@ -118,9 +122,8 @@
             <div class="content container__align">
                 <div class="item">
                     <div class="image__container">
-                        <img src="img/Layer 4.png" alt="">
+                        <img src="img/Layer4.png" alt="">
                     </div>
-                    
                     <div class="description ">
                         <h3>ELLERY X M'O CAPSULE</h3>
                         <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
@@ -128,23 +131,9 @@
                     </div>
                 </div>
                 <div class="item">
-                    <!-- <div class="section3__image">
-
-                    </div> -->
-                    <!-- <div class="item2__container"> -->
-                        <!-- <div class="item2__picture"> -->
-                            <div class="image__container">
-                                <img src="img/Girl.jpg" alt="">
-                            </div>
-                            
-                            <!-- <div class="item__cart">
-                                <div class="basket">
-                                    <img src="img/Vector.png" alt="Cart">
-                                    <span>Add to Cart</span>
-                                </div>
-                            </div> -->
-                        <!-- </div> -->
-                    <!-- </div> -->
+                    <div class="image__container">
+                        <img src="img/Girl.jpg" alt="">
+                    </div>   
                     <div class="description">
                         <h3>ELLERY X M'O CAPSULE</h3>
                         <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
@@ -153,10 +142,8 @@
                 </div>
                 <div class="item">
                     <div class="image__container">
-                        <img src="img/Layer 46.png" alt="">
+                        <img src="img/Layer46.png" alt="">
                     </div>
-                    
-                    
                     <div class="description">
                         <h3>ELLERY X M'O CAPSULE</h3>
                         <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
@@ -165,10 +152,8 @@
                 </div>  
                 <div class="item">
                     <div class="image__container">
-                        <img src="img/Layer 50.png" alt="">
+                        <img src="img/Layer50.png" alt="">
                     </div>
-
-                    
                     <div class="description">
                         <h3>ELLERY X M'O CAPSULE</h3>
                         <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
@@ -179,7 +164,6 @@
                     <div class="image__container">
                         <img src="img/ofis.png" alt="">
                     </div>
-                    
                     <div class="description">
                         <h3>ELLERY X M'O CAPSULE</h3>
                         <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
@@ -190,7 +174,6 @@
                     <div class="image__container">
                         <img src="img/liudi.png" alt="">
                     </div>
-                    
                     <div class="description">
                         <h3>ELLERY X M'O CAPSULE</h3>
                         <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
@@ -198,99 +181,72 @@
                     </div>
                 </div>  
             </div>
-            <div class="btn__panel">
+            <div class="btn__panel slide-in-fwd-center">
                 <button>Browse All Product</button>
             </div>
         </div>
-
         <div class="section4">
             <div class="items container__align">
                 <div class="item">
-                    <img src="img/Car.svg" alt="">
+                    <div class="picture vibrate-1"><img src="img/Car.svg" alt=""></div>
                     <h3>Free Delivery</h3>
                     <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
                 </div>
                 <div class="item">
-                    <img src="img/Percent.png" alt="">
+                    <div class="picture rotate-scale-up"><img src="img/Percent.png" alt=""></div>
                     <h3>Sales & discounts</h3>
                     <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
                 </div>
                 <div class="item">
-                    <img src="img/Crown.png" alt="">
+                    <div class="picture wobble-hor-bottom"><img src="img/Crown.png" alt=""></div>
                     <h3>Quality assurance</h3>
                     <p>Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
                 </div>
             </div>
-
         </div>
-
         <div class="section5">
             <div class="background">
                 <div class="items container__align">
-
                     <div class="item">
-                        <img src="img//Intersect.png" alt="">
+                        <img src="img/Intersect.png" alt="">
                         <p>“Vestibulum quis porttitor dui! Quisque <i>viverra nunc mi, a pulvinar purus condimentum“</i></p>
                     </div>
-    
                     <div class="item">
                         <div class="text">
                             <h2>SUBSCRIBE</h2>
                             <h3>FOR OUR NEWLETTER AND PROMOTION</h3>
                         </div>
-                        <div class="email">
-                            <div class="email__picture">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="323" height="49" viewBox="0 0 323 49" fill="none">
-                                    <path d="M300.376 0H22.2143C9.94567 0 0 10.969 0 24.5C0 38.031 9.94567 49 22.2143 49H300.376C312.644 49 322.59 38.031 322.59 24.5C322.59 10.969 312.644 0 300.376 0Z" fill="#E1E1E1"/>
-                                    </svg>
-                                <div class="subscribe">
-                                    <span>Subscribe</span>
-                                </div>
-                            </div>
-                            
-                                <!-- <img class="image" src="img/Rounded Rectangle 5 copy.png" alt=""> -->
-                                <!-- <form action="#">
-                                    <input type="email">
-                                </form> -->
-                                
-                        </div>
-    
-                        
-                        <!-- <img src="img//Intersect.png" alt="">
-                        <p>“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum“</p> -->
+                        <form class="email__form" action="#">
+                            <input type="email" id="email" class="email" placeholder="Enter you email" required>
+                            <button type="submit" class="subscribe">Subscribe</button>
+                        </form> 
                     </div>
-    
                 </div>
             </div>
-           
         </div>
     </div>
 
     <footer>
         <div class="brands container__align">
-                <div class="brands__item">
-                    <f3>© 2021  Brand  All Rights Reserved.</f3>
+            <div class="brands__item">
+                <h3>© 2021  Brand  All Rights Reserved.</h3>
+            </div>
+            <div class="brands__item btn__social">
+                    <div class="brands__social">
+                    <span class="fa-brands fa-facebook-f"></span>
                 </div>
-                <div class="brands__item btn__social">
-                     <div class="brands__social">
-                        <span class="fa-brands fa-facebook-f"></span>
-                    </div>
-                    
-                    <div class="brands__social">
-                        <span class="fa-brands fa-instagram"></span>
-                    </div>
-                    <div class="brands__social">
-                        <span class="fa-brands fa-pinterest-p"></span> 
-                    </div>
-                    <div class="brands__social">
-                        <span class="fa-brands fa-twitter"></span>
-                    </div>
+                
+                <div class="brands__social">
+                    <span class="fa-brands fa-instagram"></span>
                 </div>
-           
+                <div class="brands__social">
+                    <span class="fa-brands fa-pinterest-p"></span> 
+                </div>
+                <div class="brands__social">
+                    <span class="fa-brands fa-twitter"></span>
+                </div>
+            </div>           
         </div>
-
     </footer>
-
-
 </body>
 </html>
