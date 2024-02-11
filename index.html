@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,47 +10,49 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
-</head>
+<script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=ojaU0m2UAuJQGuR_4lDNyeuz07QULZYhi2khiYPboP0rS9ZdKZkL1bWEr-Nuz0OD" charset="UTF-8"></script></head>
 <body>
     <header class="menu">
         <nav class="container__align">
             <div class="logo">
-                <img src="img/Group2.png" alt="Logo">
-                <div class="menu__button search">
+                <a href="."><img class="icon" src="img/Group2.png" alt="Logo"></a>
+                <div class="menu__button search clicable">
                     <img src="img/search.svg" alt="Search">
                 </div>
             </div>
             <div class="menu__panel">
                 <div class="menu__dropdown">
-                    <div class="menu__button dropbtn"><img src="img/drop.svg" alt="Выпадающее меню"></div>
-                    <ul class="menu__list">
-                        <li class="menu__container"> </li>
+
+                    <label for="header__check"><img class=" menu__button" src="img/drop.svg" alt="menu">></label>
+                    <input class="header__checkbox" id="header__check" type="checkbox" hidden>
+                    <div class="nav"><ul class="menu__list">
                         <li class="menu__item"><a class="menu__link menu__category" href="#">MENU</a></li>
-                        <li class="menu__item"><a class="menu__link menu__category" href="#">MAN</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">Accessories</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">Bags</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">Denim</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">T-Shirts</a></li>
+                        <li class="menu__item"><a class="menu__link menu__category" href="#Man">MAN</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#Accessories">Accessories</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#Accessories">Bags</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#Man">Denim</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#Man">T-Shirts</a></li>
                         <li class="menu__item"><a class="menu__link menu__category" href="#Women">WOMAN</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">Accessories</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">Jackets & Coats</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">Polos</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">T-Shirts</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">Shirts</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#Accessories">Accessories</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#Women">Jackets & Coats</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#Women">Polos</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#Women">T-Shirts</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#Women">Shirts</a></li>
                         <li class="menu__item"><a class="menu__link menu__category" href="#">KIDS</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">Accessories</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">Jackets & Coats</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">Polos</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">T-Shirts</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">Shirts</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#">Bags</a></li>
-                    </ul>
+                        <li class="menu__item"><a class="menu__link" href="#Accessories">Accessories</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#Kids">Jackets & Coats</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#Kids">Polos</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#Kids">T-Shirts</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#Kids">Shirts</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#Accessories">Bags</a></li>
+                    </ul></div>
+                    
                 </div>
-                <div class="menu__button profile menu_btn_hidden">
+                <div class="menu__button profile menu_btn_hidden clicable">
                     <img src="img/profile.svg" alt="">
                 </div>
                 <div class="cart-container menu_btn_hidden">
-                    <div class="menu__button basket"></div>
+                    <div class="menu__button basket clicable"></div>
                     <img class="ellipse" src="img/Ellipse2.png" alt="">
                     <div class="digit">5</div>
                 </div>
@@ -82,7 +85,7 @@
                     </div> 
                 </div>
 
-                <div class="sale__picture short__picture" id="Men">
+                <div class="sale__picture short__picture" id="Man">
                     <img src="img/si2.jpg" alt="">
                     <div class="sale">
                         <h3 class="another__color">HOT DEAL</h3>
@@ -98,11 +101,11 @@
                 </div>
             </div>
             <div class="part__lower">
-                <div class="sale__picture long__picture container__align">
+                <div class="sale__picture long__picture container__align" id="Accessories">
                     <img src="img/sibig.jpg" alt="">
                     <div class="sale">
-                        <h3 class="another__color">NEW ARRIVALS</h3>
-                        <h2 class="color__header">FOR KIDS</h2>
+                        <h3 class="another__color">LUXIROUS & TRENDY</h3>
+                        <h2 class="color__header">ACCESORIES</h2>
                     </div> 
                 </div>
             </div>
@@ -211,7 +214,7 @@
                         </div>
                         <form class="email__form" action="#">
                             <input type="email" id="email" class="email" placeholder="Enter you email" required>
-                            <button type="submit" class="subscribe">Subscribe</button>
+                            <button type="submit" class="submit slide-in-fwd-center" onclick="getData(); return false;">Subscribe</button>
                         </form> 
                     </div>
                 </div>
@@ -241,5 +244,43 @@
             </div>           
         </div>
     </footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
 </body>
 </html>
