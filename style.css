@@ -70,12 +70,11 @@ body {
 }
 
   
-  .header__checkbox:checked~.menu__list {
+.header__checkbox:checked~.nav {
     right: 0;
-  }
-  
-  .menu .menu__list {
-    list-style-type: none;
+ }
+
+  .menu .nav {
     position: absolute;
     top: 75px;
     right: -232px;
@@ -84,6 +83,10 @@ body {
     width: 232px;
     background: #FFF;
     box-shadow: 6px 4px 35px 0px #00000036;
+  }
+
+  .menu .menu__list {
+    list-style-type: none;
   }
 
 
